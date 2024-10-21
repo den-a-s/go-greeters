@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option go_package = "service-imlive.service2.v1";
+
+message GreetRequest {
+    string name = 1;
+}
+
+message GreetResponse {}
+
+service GreeterService {
+    rpc Greet (GreetRequest) returns (GreetResponse) {}
+}
